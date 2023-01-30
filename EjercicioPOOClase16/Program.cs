@@ -7,10 +7,13 @@ namespace EjercicioPOOClase16
     {
         static void Main(string[] args)
         {
-
-            var menuAplicacion = new MenuAplicacion( new RepositorioPersonaEnArchivos());
+            //Ingrese 1 para trabajar sobre Personas
+            //Ingrese 2 para trabajar sobre desempleados
+            var menuAplicacion = new MenuAplicacionPersona( new RepositorioEnArchivos<Persona>());
             menuAplicacion.Iniciar();
-           
+
+
+            new MenuAplicacionDesempleado(new RepositorioEnArchivos<Desempleado>()).Iniciar();
         }
     }
 }

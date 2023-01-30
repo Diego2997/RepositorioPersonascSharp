@@ -9,10 +9,10 @@ using EjercicioPOOClase16.Interfaces;
 
 namespace EjercicioPOOClase16.Frontend
 {
-    public class MenuAplicacionPersona
+    public class MenuAplicacion
     {
-        private IRepositorio<Persona> _repositorioPersona;
-        public MenuAplicacionPersona(IRepositorio<Persona> repositorioPersona)
+        private IRepositorioPersona _repositorioPersona;
+        public MenuAplicacion(IRepositorioPersona repositorioPersona)
         {
             _repositorioPersona= repositorioPersona;
         }

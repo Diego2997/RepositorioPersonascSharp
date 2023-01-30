@@ -7,13 +7,13 @@ using System.Threading.Tasks;
 
 namespace EjercicioPOOClase16.Interfaces
 {
-    public interface IRepositorio<T> where T : Persona
+    public interface IRepositorioPersona
     {
-        void Insertar(T persona);
+        void Insertar(Persona persona);
         void Eliminar(string numeroDocumento);
-        void Actualizar(T persona);
+        void Actualizar(Persona persona);
         void Actualizar(string numeroDocumento, string nombre,string apellido);
-        bool Existe(T persona);
+        bool Existe(Persona persona);
         bool Existe(string numeroDocumento);
     }
 }
